@@ -7,23 +7,28 @@
 
 import UIKit
 
+protocol SelectorTableViewCellDelegate: class {
+    func pushInformationViewController(name: String, variant: Varinats)
+}
+
 class SelectorTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Props
     static let id = String(describing: SelectorTableViewCell.self)
-    private var variants: [Varinats] = [] {
-        didSet {
-            collectionView.reloadData()
-        }
-    }
+    weak var delegate: SelectorTableViewCellDelegate?
+    private var name = ""
+    private var variants: [Varinats] = []
     
     // MARK: - Setup functions
-    public func setup(variants: [Varinats]) {
+    public func setup(name: String, variants: [Varinats]) {
         setupComponents()
+        
+        self.name = name
         self.variants = variants
+        collectionView.reloadData()
     }
     
     // MARK: - Module functions
@@ -51,5 +56,10 @@ extension SelectorTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         
         cell.setup(title: variants[indexPath.row].text)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        delegate?.pushInformationViewController(name: name, variant: variants[indexPath.row])
     }
 }

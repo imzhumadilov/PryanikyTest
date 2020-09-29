@@ -9,4 +9,6 @@
 protocol ItemsListViewOutput {
     
     func fetchData()
+    func pushInformationViewController(name: String, data: DataIn)
+    func pushInformationViewController(name: String, variant: Varinats)
 }

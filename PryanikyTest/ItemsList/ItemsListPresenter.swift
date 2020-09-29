@@ -28,10 +28,17 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
                 self.view?.getData(items: items)
             case .failure(let error):
                 print(error.localizedDescription)
-            
             }
-            
         }
+    }
+    
+    func pushInformationViewController(name: String, data: DataIn) {
+        router?.pushInformationViewController(name: name, data: data)
+    }
+    
+    
+    func pushInformationViewController(name: String, variant: Varinats) {
+        router?.pushInformationViewController(name: name, variant: variant)
     }
     
     // MARK: - Module functions

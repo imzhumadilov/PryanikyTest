@@ -31,6 +31,17 @@
 		288806AC252347A300276566 /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AA252347A300276566 /* SelectorTableViewCell.xib */; };
 		288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */; };
 		288806B125234A7800276566 /* SelectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */; };
+		288806B62523512A00276566 /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806B52523512A00276566 /* ViewList.swift */; };
+		288806C4252351CF00276566 /* InformationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C2252351CF00276566 /* InformationRouter.swift */; };
+		288806C5252351CF00276566 /* InformationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C3252351CF00276566 /* InformationRouterInput.swift */; };
+		288806C8252351D300276566 /* InformationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C7252351D300276566 /* InformationConfigurator.swift */; };
+		288806CC252351D800276566 /* InformationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CB252351D800276566 /* InformationViewInput.swift */; };
+		288806CD252351D800276566 /* InformationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CA252351D800276566 /* InformationViewOutput.swift */; };
+		288806D2252351DC00276566 /* InformationPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D0252351DC00276566 /* InformationPresenterInput.swift */; };
+		288806D3252351DC00276566 /* InformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CF252351DC00276566 /* InformationPresenter.swift */; };
+		288806D4252351DC00276566 /* InformationPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D1252351DC00276566 /* InformationPresenterOutput.swift */; };
+		288806D8252351F300276566 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D6252351F300276566 /* InformationViewController.swift */; };
+		288806D9252351F300276566 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806D7252351F300276566 /* InformationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +71,17 @@
 		288806AA252347A300276566 /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
 		288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewCell.swift; sourceTree = "<group>"; };
 		288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorCollectionViewCell.xib; sourceTree = "<group>"; };
+		288806B52523512A00276566 /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
+		288806C2252351CF00276566 /* InformationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRouter.swift; sourceTree = "<group>"; };
+		288806C3252351CF00276566 /* InformationRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRouterInput.swift; sourceTree = "<group>"; };
+		288806C7252351D300276566 /* InformationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationConfigurator.swift; sourceTree = "<group>"; };
+		288806CA252351D800276566 /* InformationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewOutput.swift; sourceTree = "<group>"; };
+		288806CB252351D800276566 /* InformationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewInput.swift; sourceTree = "<group>"; };
+		288806CF252351DC00276566 /* InformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenter.swift; sourceTree = "<group>"; };
+		288806D0252351DC00276566 /* InformationPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenterInput.swift; sourceTree = "<group>"; };
+		288806D1252351DC00276566 /* InformationPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenterOutput.swift; sourceTree = "<group>"; };
+		288806D6252351F300276566 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		288806D7252351F300276566 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,8 @@
 				288806962523138C00276566 /* UIViewController+identifier.swift */,
 				288806992523159500276566 /* PryanikyService.swift */,
 				2888069E25231C5000276566 /* DataI.swift */,
+				288806B52523512A00276566 /* ViewList.swift */,
+				288806B8252351A100276566 /* Information */,
 				288806602523123800276566 /* ItemsList */,
 				288806542523120D00276566 /* Assets.xcassets */,
 				288806562523120D00276566 /* LaunchScreen.storyboard */,
@@ -135,6 +159,23 @@
 				288806AA252347A300276566 /* SelectorTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		288806B8252351A100276566 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				288806C7252351D300276566 /* InformationConfigurator.swift */,
+				288806CF252351DC00276566 /* InformationPresenter.swift */,
+				288806D0252351DC00276566 /* InformationPresenterInput.swift */,
+				288806D1252351DC00276566 /* InformationPresenterOutput.swift */,
+				288806C2252351CF00276566 /* InformationRouter.swift */,
+				288806C3252351CF00276566 /* InformationRouterInput.swift */,
+				288806D6252351F300276566 /* InformationViewController.swift */,
+				288806D7252351F300276566 /* InformationViewController.xib */,
+				288806CB252351D800276566 /* InformationViewInput.swift */,
+				288806CA252351D800276566 /* InformationViewOutput.swift */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				288806A7252344E000276566 /* ItemTableViewCell.xib in Resources */,
+				288806D9252351F300276566 /* InformationViewController.xib in Resources */,
 				288806AC252347A300276566 /* SelectorTableViewCell.xib in Resources */,
 				28880684252312D000276566 /* ItemsListViewController.xib in Resources */,
 				288806582523120D00276566 /* LaunchScreen.storyboard in Resources */,
@@ -210,8 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288806CD252351D800276566 /* InformationViewOutput.swift in Sources */,
+				288806D3252351DC00276566 /* InformationPresenter.swift in Sources */,
 				288806772523128C00276566 /* ItemsListViewInput.swift in Sources */,
+				288806C4252351CF00276566 /* InformationRouter.swift in Sources */,
 				2888066D2523128600276566 /* ItemsListPresenterOutput.swift in Sources */,
+				288806C8252351D300276566 /* InformationConfigurator.swift in Sources */,
 				288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */,
 				288806AB252347A300276566 /* SelectorTableViewCell.swift in Sources */,
 				2888069A2523159500276566 /* PryanikyService.swift in Sources */,
@@ -224,8 +270,14 @@
 				2888069F25231C5000276566 /* DataI.swift in Sources */,
 				288806752523128C00276566 /* ItemsListViewOutput.swift in Sources */,
 				288806972523138C00276566 /* UIViewController+identifier.swift in Sources */,
+				288806B62523512A00276566 /* ViewList.swift in Sources */,
 				2888067B2523129300276566 /* ItemsListRouterInput.swift in Sources */,
 				2888064E2523120B00276566 /* SceneDelegate.swift in Sources */,
+				288806D4252351DC00276566 /* InformationPresenterOutput.swift in Sources */,
+				288806D2252351DC00276566 /* InformationPresenterInput.swift in Sources */,
+				288806D8252351F300276566 /* InformationViewController.swift in Sources */,
+				288806CC252351D800276566 /* InformationViewInput.swift in Sources */,
+				288806C5252351CF00276566 /* InformationRouterInput.swift in Sources */,
 				2888066E2523128600276566 /* ItemsListPresenter.swift in Sources */,
 				2888067F2523129700276566 /* ItemsListConfigurator.swift in Sources */,
 			);

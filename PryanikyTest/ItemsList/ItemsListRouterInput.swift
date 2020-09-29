@@ -6,4 +6,8 @@
 //  Copyright © 2020 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-protocol ItemsListRouterInput: class { }
+protocol ItemsListRouterInput: class {
+    
+    func pushInformationViewController(name: String, data: DataIn)
+    func pushInformationViewController(name: String, variant: Varinats)
+}

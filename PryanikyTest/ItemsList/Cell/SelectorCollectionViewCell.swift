@@ -10,7 +10,7 @@ import UIKit
 class SelectorCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     
     // MARK: - Props
     static let id = String(describing: SelectorCollectionViewCell.self)
@@ -19,5 +19,4 @@ class SelectorCollectionViewCell: UICollectionViewCell {
     public func setup(title: String) {
         titleLabel.text = title
     }
-
 }

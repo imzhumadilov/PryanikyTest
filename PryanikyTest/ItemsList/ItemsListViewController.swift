@@ -10,7 +10,7 @@ import UIKit
 class ItemsListViewController: UIViewController, ItemsListViewInput {
     
     // MARK: - Outlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Props
     var output: ItemsListViewOutput?
@@ -90,13 +90,14 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let items = items else { return UITableViewCell() }
         
-        if items.view[indexPath.row] == "selector" {
+        if items.view[indexPath.row] == ViewList.selector.rawValue {
             
             guard let cell = tableView
                     .dequeueReusableCell(withIdentifier: SelectorTableViewCell.id,
                                          for: indexPath) as? SelectorTableViewCell else { return UITableViewCell() }
             
-            cell.setup(variants: items.data[2].data.variants)
+            cell.delegate = self
+            cell.setup(name: ViewList.selector.rawValue, variants: items.data[2].data.variants)
             return cell
         }
         
@@ -109,4 +110,20 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        guard let viewTitle = items?.view[indexPath.row],
+              viewTitle != ViewList.selector.rawValue,
+              let data = items?.data.filter({ $0.name == viewTitle }).first?.data else { return }
+        
+        output?.pushInformationViewController(name: viewTitle, data: data)
+    }
+}
+
+// MARK: - SelectorTableViewCellDelegate
+extension ItemsListViewController: SelectorTableViewCellDelegate {
+    
+    func pushInformationViewController(name: String, variant: Varinats) {
+        output?.pushInformationViewController(name: name, variant: variant)
+    }
 }
