@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		2888064C2523120B00276566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888064B2523120B00276566 /* AppDelegate.swift */; };
 		2888064E2523120B00276566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888064D2523120B00276566 /* SceneDelegate.swift */; };
-		288806502523120B00276566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888064F2523120B00276566 /* ViewController.swift */; };
-		288806532523120B00276566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288806512523120B00276566 /* Main.storyboard */; };
 		288806552523120D00276566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288806542523120D00276566 /* Assets.xcassets */; };
 		288806582523120D00276566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288806562523120D00276566 /* LaunchScreen.storyboard */; };
+		2888066D2523128600276566 /* ItemsListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888066C2523128600276566 /* ItemsListPresenterOutput.swift */; };
+		2888066E2523128600276566 /* ItemsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888066A2523128600276566 /* ItemsListPresenter.swift */; };
+		2888066F2523128600276566 /* ItemsListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888066B2523128600276566 /* ItemsListPresenterInput.swift */; };
+		288806752523128C00276566 /* ItemsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806712523128B00276566 /* ItemsListViewOutput.swift */; };
+		288806772523128C00276566 /* ItemsListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806722523128B00276566 /* ItemsListViewInput.swift */; };
+		2888067B2523129300276566 /* ItemsListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888067A2523129200276566 /* ItemsListRouterInput.swift */; };
+		2888067C2523129300276566 /* ItemsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806792523129200276566 /* ItemsListRouter.swift */; };
+		2888067F2523129700276566 /* ItemsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888067E2523129700276566 /* ItemsListConfigurator.swift */; };
+		28880683252312D000276566 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28880681252312D000276566 /* ItemsListViewController.swift */; };
+		28880684252312D000276566 /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28880682252312D000276566 /* ItemsListViewController.xib */; };
+		288806932523136C00276566 /* String+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806922523136C00276566 /* String+className.swift */; };
+		288806972523138C00276566 /* UIViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806962523138C00276566 /* UIViewController+identifier.swift */; };
+		2888069A2523159500276566 /* PryanikyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806992523159500276566 /* PryanikyService.swift */; };
+		2888069F25231C5000276566 /* DataI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888069E25231C5000276566 /* DataI.swift */; };
+		288806A6252344E000276566 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806A4252344E000276566 /* ItemTableViewCell.swift */; };
+		288806A7252344E000276566 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806A5252344E000276566 /* ItemTableViewCell.xib */; };
+		288806AB252347A300276566 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806A9252347A300276566 /* SelectorTableViewCell.swift */; };
+		288806AC252347A300276566 /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AA252347A300276566 /* SelectorTableViewCell.xib */; };
+		288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */; };
+		288806B125234A7800276566 /* SelectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		288806482523120B00276566 /* PryanikyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2888064B2523120B00276566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2888064D2523120B00276566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2888064F2523120B00276566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		288806522523120B00276566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		288806542523120D00276566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		288806572523120D00276566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		288806592523120D00276566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2888066A2523128600276566 /* ItemsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListPresenter.swift; sourceTree = "<group>"; };
+		2888066B2523128600276566 /* ItemsListPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListPresenterInput.swift; sourceTree = "<group>"; };
+		2888066C2523128600276566 /* ItemsListPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListPresenterOutput.swift; sourceTree = "<group>"; };
+		288806712523128B00276566 /* ItemsListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewOutput.swift; sourceTree = "<group>"; };
+		288806722523128B00276566 /* ItemsListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewInput.swift; sourceTree = "<group>"; };
+		288806792523129200276566 /* ItemsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListRouter.swift; sourceTree = "<group>"; };
+		2888067A2523129200276566 /* ItemsListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListRouterInput.swift; sourceTree = "<group>"; };
+		2888067E2523129700276566 /* ItemsListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListConfigurator.swift; sourceTree = "<group>"; };
+		28880681252312D000276566 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		28880682252312D000276566 /* ItemsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
+		288806922523136C00276566 /* String+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+className.swift"; sourceTree = "<group>"; };
+		288806962523138C00276566 /* UIViewController+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+identifier.swift"; sourceTree = "<group>"; };
+		288806992523159500276566 /* PryanikyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikyService.swift; sourceTree = "<group>"; };
+		2888069E25231C5000276566 /* DataI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataI.swift; sourceTree = "<group>"; };
+		288806A4252344E000276566 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		288806A5252344E000276566 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		288806A9252347A300276566 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
+		288806AA252347A300276566 /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
+		288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewCell.swift; sourceTree = "<group>"; };
+		288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +94,47 @@
 			children = (
 				2888064B2523120B00276566 /* AppDelegate.swift */,
 				2888064D2523120B00276566 /* SceneDelegate.swift */,
-				2888064F2523120B00276566 /* ViewController.swift */,
-				288806512523120B00276566 /* Main.storyboard */,
+				288806922523136C00276566 /* String+className.swift */,
+				288806962523138C00276566 /* UIViewController+identifier.swift */,
+				288806992523159500276566 /* PryanikyService.swift */,
+				2888069E25231C5000276566 /* DataI.swift */,
+				288806602523123800276566 /* ItemsList */,
 				288806542523120D00276566 /* Assets.xcassets */,
 				288806562523120D00276566 /* LaunchScreen.storyboard */,
 				288806592523120D00276566 /* Info.plist */,
 			);
 			path = PryanikyTest;
+			sourceTree = "<group>";
+		};
+		288806602523123800276566 /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+				2888067E2523129700276566 /* ItemsListConfigurator.swift */,
+				2888066A2523128600276566 /* ItemsListPresenter.swift */,
+				2888066B2523128600276566 /* ItemsListPresenterInput.swift */,
+				2888066C2523128600276566 /* ItemsListPresenterOutput.swift */,
+				288806792523129200276566 /* ItemsListRouter.swift */,
+				2888067A2523129200276566 /* ItemsListRouterInput.swift */,
+				28880681252312D000276566 /* ItemsListViewController.swift */,
+				28880682252312D000276566 /* ItemsListViewController.xib */,
+				288806722523128B00276566 /* ItemsListViewInput.swift */,
+				288806712523128B00276566 /* ItemsListViewOutput.swift */,
+				288806A1252344AB00276566 /* Cell */,
+			);
+			path = ItemsList;
+			sourceTree = "<group>";
+		};
+		288806A1252344AB00276566 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				288806A4252344E000276566 /* ItemTableViewCell.swift */,
+				288806A5252344E000276566 /* ItemTableViewCell.xib */,
+				288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */,
+				288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */,
+				288806A9252347A300276566 /* SelectorTableViewCell.swift */,
+				288806AA252347A300276566 /* SelectorTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +194,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288806A7252344E000276566 /* ItemTableViewCell.xib in Resources */,
+				288806AC252347A300276566 /* SelectorTableViewCell.xib in Resources */,
+				28880684252312D000276566 /* ItemsListViewController.xib in Resources */,
 				288806582523120D00276566 /* LaunchScreen.storyboard in Resources */,
 				288806552523120D00276566 /* Assets.xcassets in Resources */,
-				288806532523120B00276566 /* Main.storyboard in Resources */,
+				288806B125234A7800276566 /* SelectorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +210,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				288806502523120B00276566 /* ViewController.swift in Sources */,
+				288806772523128C00276566 /* ItemsListViewInput.swift in Sources */,
+				2888066D2523128600276566 /* ItemsListPresenterOutput.swift in Sources */,
+				288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */,
+				288806AB252347A300276566 /* SelectorTableViewCell.swift in Sources */,
+				2888069A2523159500276566 /* PryanikyService.swift in Sources */,
+				2888067C2523129300276566 /* ItemsListRouter.swift in Sources */,
+				288806A6252344E000276566 /* ItemTableViewCell.swift in Sources */,
+				2888066F2523128600276566 /* ItemsListPresenterInput.swift in Sources */,
+				28880683252312D000276566 /* ItemsListViewController.swift in Sources */,
 				2888064C2523120B00276566 /* AppDelegate.swift in Sources */,
+				288806932523136C00276566 /* String+className.swift in Sources */,
+				2888069F25231C5000276566 /* DataI.swift in Sources */,
+				288806752523128C00276566 /* ItemsListViewOutput.swift in Sources */,
+				288806972523138C00276566 /* UIViewController+identifier.swift in Sources */,
+				2888067B2523129300276566 /* ItemsListRouterInput.swift in Sources */,
 				2888064E2523120B00276566 /* SceneDelegate.swift in Sources */,
+				2888066E2523128600276566 /* ItemsListPresenter.swift in Sources */,
+				2888067F2523129700276566 /* ItemsListConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		288806512523120B00276566 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				288806522523120B00276566 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		288806562523120D00276566 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
