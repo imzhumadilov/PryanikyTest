@@ -22,6 +22,7 @@ class InformationViewController: UIViewController, InformationViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupComponents()
         output?.getData()
     }
     
@@ -48,6 +49,14 @@ class InformationViewController: UIViewController, InformationViewInput {
 
 // MARK: - Setup functions
 extension InformationViewController {
+    
+    private func setupComponents() {
+        navigationItem.title = "Information"
+        
+        nameLabel.text = ""
+        textLabel.text = ""
+        idLabel.text = ""
+    }
     
     private func setupView(type: ViewType) {
         
