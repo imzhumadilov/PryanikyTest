@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SelectorTableViewCellDelegate: class {
-    func pushInformationViewController(name: String, variant: Varinats)
+    func pushInformationViewController(type: ViewList, variant: Varinats)
 }
 
 class SelectorTableViewCell: UITableViewCell {
@@ -60,6 +60,6 @@ extension SelectorTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        delegate?.pushInformationViewController(name: name, variant: variants[indexPath.row])
+        delegate?.pushInformationViewController(type: .selector, variant: variants[indexPath.row])
     }
 }

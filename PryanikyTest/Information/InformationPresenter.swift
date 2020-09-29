@@ -16,12 +16,12 @@ class InformationPresenter: InformationPresenterInput, InformationViewOutput {
     init() { }
     
     // MARK: - InformationPresenterInput
-    func configure(name: String, data: DataIn) {
-        view?.setupView(name: name, data: data)
+    func configure(type: ViewList, data: DataIn) {
+        view?.setup(type: type, data: data)
     }
     
-    func configure(name: String, variant: Varinats) {
-        view?.setupView(name: name, variant: variant)
+    func configure(type: ViewList, variant: Varinats) {
+        view?.setup(type: type, variant: variant)
     }
     
     // MARK: - InformationViewOutput

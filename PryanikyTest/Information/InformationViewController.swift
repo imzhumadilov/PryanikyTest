@@ -18,37 +18,20 @@ class InformationViewController: UIViewController, InformationViewInput {
     // MARK: - Props
     var output: InformationViewOutput?
     
-    // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setupComponents()
-        setupActions()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        self.applyStyles()
-    }
-    
     // MARK: - InformationViewInput
-    func setupView(name: String, data: DataIn) {
-        print(name, data)
+    func setup(type: ViewList, data: DataIn) {
+        print(type, data)
     }
     
-    func setupView(name: String, variant: Varinats) {
-        print(name, variant)
+    func setup(type: ViewList, variant: Varinats) {
+        print(type, variant)
     }
 }
 
 // MARK: - Setup functions
 extension InformationViewController {
     
-    func setupComponents() { }
-    
-    func setupActions() { }
-    
-    func applyStyles() { }
-    
+    func setupView() { }
 }
 
 // MARK: - Actions

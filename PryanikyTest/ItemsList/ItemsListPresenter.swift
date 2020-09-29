@@ -32,13 +32,13 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
         }
     }
     
-    func pushInformationViewController(name: String, data: DataIn) {
-        router?.pushInformationViewController(name: name, data: data)
+    func pushInformationViewController(type: ViewList, data: DataIn) {
+        router?.pushInformationViewController(type: type, data: data)
     }
     
     
-    func pushInformationViewController(name: String, variant: Varinats) {
-        router?.pushInformationViewController(name: name, variant: variant)
+    func pushInformationViewController(type: ViewList, variant: Varinats) {
+        router?.pushInformationViewController(type: type, variant: variant)
     }
     
     // MARK: - Module functions

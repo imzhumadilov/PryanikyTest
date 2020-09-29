@@ -116,14 +116,14 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
               viewTitle != ViewList.selector.rawValue,
               let data = items?.data.filter({ $0.name == viewTitle }).first?.data else { return }
         
-        output?.pushInformationViewController(name: viewTitle, data: data)
+        output?.pushInformationViewController(type: ViewList(rawValue: viewTitle) ?? .none, data: data)
     }
 }
 
 // MARK: - SelectorTableViewCellDelegate
 extension ItemsListViewController: SelectorTableViewCellDelegate {
     
-    func pushInformationViewController(name: String, variant: Varinats) {
-        output?.pushInformationViewController(name: name, variant: variant)
+    func pushInformationViewController(type: ViewList, variant: Varinats) {
+        output?.pushInformationViewController(type: type, variant: variant)
     }
 }

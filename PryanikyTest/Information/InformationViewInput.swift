@@ -7,6 +7,6 @@
 //
 
 protocol InformationViewInput: class {
-    func setupView(name: String, data: DataIn)
-    func setupView(name: String, variant: Varinats)
+    func setup(type: ViewList, data: DataIn)
+    func setup(type: ViewList, variant: Varinats)
 }

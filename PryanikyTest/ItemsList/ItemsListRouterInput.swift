@@ -8,6 +8,6 @@
 
 protocol ItemsListRouterInput: class {
     
-    func pushInformationViewController(name: String, data: DataIn)
-    func pushInformationViewController(name: String, variant: Varinats)
+    func pushInformationViewController(type: ViewList, data: DataIn)
+    func pushInformationViewController(type: ViewList, variant: Varinats)
 }

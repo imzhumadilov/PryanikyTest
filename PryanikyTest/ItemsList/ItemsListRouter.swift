@@ -17,18 +17,18 @@ class ItemsListRouter: ItemsListRouterInput {
     init() { }
     
     // MARK: - ItemsListRouterInput
-    func pushInformationViewController(name: String, data: DataIn) {
+    func pushInformationViewController(type: ViewList, data: DataIn) {
         let viewController = InformationConfigurator.create()
         let informationPresenterInput = InformationConfigurator.configure(with: viewController)
-        informationPresenterInput.configure(name: name, data: data)
+        informationPresenterInput.configure(type: type, data: data)
         
         view?.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func pushInformationViewController(name: String, variant: Varinats) {
+    func pushInformationViewController(type: ViewList, variant: Varinats) {
         let viewController = InformationConfigurator.create()
         let informationPresenterInput = InformationConfigurator.configure(with: viewController)
-        informationPresenterInput.configure(name: name, variant: variant)
+        informationPresenterInput.configure(type: type, variant: variant)
         
         view?.navigationController?.pushViewController(viewController, animated: true)
     }
