@@ -25,12 +25,7 @@ class ItemsListViewController: UIViewController, ItemsListViewInput {
         super.viewDidLoad()
         
         setupComponents()
-        setupActions()
         output?.fetchData()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        self.applyStyles()
     }
     
     // MARK: - ItemsListViewInput
@@ -51,17 +46,12 @@ extension ItemsListViewController {
         tableView.register(UINib(nibName: ItemTableViewCell.id, bundle: nil),
                            forCellReuseIdentifier: ItemTableViewCell.id)
         tableView.register(UINib(nibName: SelectorTableViewCell.id, bundle: nil),
-                                   forCellReuseIdentifier: SelectorTableViewCell.id)
+                           forCellReuseIdentifier: SelectorTableViewCell.id)
         
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(updateNews), for: .valueChanged)
         tableView.refreshControl = refreshControl
     }
-    
-    func setupActions() { }
-    
-    func applyStyles() { }
-    
 }
 
 // MARK: - Actions
@@ -73,9 +63,6 @@ extension ItemsListViewController {
         sender.endRefreshing()
     }
 }
-
-// MARK: - Module functions
-extension ItemsListViewController { }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -94,10 +81,12 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
             
             guard let cell = tableView
                     .dequeueReusableCell(withIdentifier: SelectorTableViewCell.id,
-                                         for: indexPath) as? SelectorTableViewCell else { return UITableViewCell() }
+                                         for: indexPath) as? SelectorTableViewCell,
+                  let data = items.data.filter({ $0.name == ViewList.selector.rawValue }).first else { return UITableViewCell() }
             
             cell.delegate = self
-            cell.setup(name: ViewList.selector.rawValue, variants: items.data[2].data.variants)
+            cell.setup(name: ViewList.selector.rawValue, variants: data.data.variants)
+            
             return cell
         }
         
@@ -107,6 +96,7 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let title = items.view[indexPath.row]
         cell.setup(title: title)
+        
         return cell
     }
     

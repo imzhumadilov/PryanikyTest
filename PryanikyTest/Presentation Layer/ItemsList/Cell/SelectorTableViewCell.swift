@@ -14,20 +14,28 @@ protocol SelectorTableViewCellDelegate: class {
 class SelectorTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Props
     static let id = String(describing: SelectorTableViewCell.self)
     weak var delegate: SelectorTableViewCellDelegate?
-    private var name = ""
     private var variants: [Varinats] = []
+    
+    // MARK: - Lifecycle
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        titleLabel.text = ""
+    }
     
     // MARK: - Setup functions
     public func setup(name: String, variants: [Varinats]) {
         setupComponents()
         
-        self.name = name
         self.variants = variants
+        
+        titleLabel.text = name
         collectionView.reloadData()
     }
     

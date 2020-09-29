@@ -38,7 +38,9 @@ class PryanikyService {
         
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         guard let data = data, let decodedData = try? decoder.decode(type, from: data) else { return nil }
+        
         return decodedData
     }
 }

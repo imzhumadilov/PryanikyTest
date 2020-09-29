@@ -7,6 +7,7 @@
 //
 
 protocol InformationPresenterInput: class {
+    
     func configure(type: ViewList, data: DataIn)
     func configure(type: ViewList, variant: Varinats)
 }

@@ -17,24 +17,22 @@ class InformationPresenter: InformationPresenterInput, InformationViewOutput {
     private var variant: Varinats?
     
     // MARK: - InformationPresenterInput
-    func configure(type: ViewList, data: DataIn) {
+    public func configure(type: ViewList, data: DataIn) {
         self.type = type
         self.data = data
     }
     
-    func configure(type: ViewList, variant: Varinats) {
+    public func configure(type: ViewList, variant: Varinats) {
         self.type = type
         self.variant = variant
     }
     
     // MARK: - InformationViewOutput
-    func getData() {
+    public func getData() {
         if let type = type, let data = data {
             view?.setup(type: type, data: data)
         } else if let type = type, let variant = variant {
             view?.setup(type: type, variant: variant)
         }
     }
-    
-    // MARK: - Module functions
 }

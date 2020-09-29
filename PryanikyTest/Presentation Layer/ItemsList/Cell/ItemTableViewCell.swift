@@ -15,6 +15,13 @@ class ItemTableViewCell: UITableViewCell {
     // MARK: - Props
     static let id = String(describing: ItemTableViewCell.self)
     
+    // MARK: - Lifecycle
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        titleLabel.text = ""
+    }
+    
     // MARK: - Setup functions
     public func setup(title: String) {
         titleLabel.text = title

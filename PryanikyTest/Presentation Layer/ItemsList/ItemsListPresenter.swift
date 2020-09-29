@@ -14,34 +14,30 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
     
     let pryanikyService = PryanikyService()
     
-    // MARK: - Initialization
-    init() { }
-    
-    // MARK: - ItemsListPresenterInput
-    
     // MARK: - ItemsListViewOutput
-    func fetchData() {
+    public func fetchData() {
         
         pryanikyService.getData(url: Routing.Data.dataJSON) { result in
+            
             switch result {
+            
             case .success(let items):
                 self.view?.getData(items: items)
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
     }
     
-    func pushInformationViewController(type: ViewList, data: DataIn) {
+    public func pushInformationViewController(type: ViewList, data: DataIn) {
         router?.pushInformationViewController(type: type, data: data)
     }
     
     
-    func pushInformationViewController(type: ViewList, variant: Varinats) {
+    public func pushInformationViewController(type: ViewList, variant: Varinats) {
         router?.pushInformationViewController(type: type, variant: variant)
     }
-    
-    // MARK: - Module functions
 }
 
 

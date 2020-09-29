@@ -18,6 +18,7 @@ class InformationViewController: UIViewController, InformationViewInput {
     // MARK: - Props
     var output: InformationViewOutput?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,23 +26,23 @@ class InformationViewController: UIViewController, InformationViewInput {
     }
     
     // MARK: - InformationViewInput
-    func setup(type: ViewList, data: DataIn) {
+    public func setup(type: ViewList, data: DataIn) {
         setupView(type: type)
         
-        nameLabel.text = type.rawValue
-        textLabel.text = data.text
+        nameLabel.text = "name: " + type.rawValue
+        textLabel.text = "text: " + data.text
         
         if type == .picture {
             setupImage(url: data.imageUrl)
         }
     }
     
-    func setup(type: ViewList, variant: Varinats) {
+    public func setup(type: ViewList, variant: Varinats) {
         setupView(type: type)
         
-        nameLabel.text = type.rawValue
-        textLabel.text = variant.text
-        idLabel.text = String(variant.id)
+        nameLabel.text = "name: " + type.rawValue
+        textLabel.text = "text: " + variant.text
+        idLabel.text = "id: " + String(variant.id)
     }
 }
 
@@ -76,11 +77,13 @@ extension InformationViewController {
         
         URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             
-            guard let data = data, let image = UIImage(data: data) else { return }
+            guard let data = data,
+                  let image = UIImage(data: data) else { return }
             
             DispatchQueue.main.async {
                 self?.selectorImageView.image = image
             }
+            
         }.resume()
     }
 }

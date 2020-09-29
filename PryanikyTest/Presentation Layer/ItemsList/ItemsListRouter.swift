@@ -13,9 +13,6 @@ class ItemsListRouter: ItemsListRouterInput {
     // MARK: - Props
     weak var view: ItemsListViewController?
     
-    // MARK: - Initialization
-    init() { }
-    
     // MARK: - ItemsListRouterInput
     func pushInformationViewController(type: ViewList, data: DataIn) {
         let viewController = InformationConfigurator.create()
@@ -32,7 +29,4 @@ class ItemsListRouter: ItemsListRouterInput {
         
         view?.navigationController?.pushViewController(viewController, animated: true)
     }
-    
-    
-    // MARK: - Module functions
 }
