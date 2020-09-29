@@ -22,7 +22,7 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
     // MARK: - ItemsListViewOutput
     func fetchData() {
         
-        pryanikyService.getData(url: "https://pryaniky.com/static/json/sample.json") { result in
+        pryanikyService.getData(url: Routing.Data.dataJSON) { result in
             switch result {
             case .success(let items):
                 self.view?.getData(items: items)

@@ -18,7 +18,7 @@ struct DataOut {
 }
 
 struct DataIn {
-    let url: String
+    let imageUrl: String
     let text: String
     let selectorId: Int
     let variants: [Varinats]
@@ -46,7 +46,7 @@ struct DataOutResponse: Decodable {
     
     func defaultMapping() -> DataOut {
         return DataOut(name: name ?? "",
-                     data: data?.defaultMapping() ?? DataIn(url: "", text: "", selectorId: 99, variants: []) )
+                     data: data?.defaultMapping() ?? DataIn(imageUrl: "", text: "", selectorId: 99, variants: []) )
     }
 }
 
@@ -57,7 +57,7 @@ struct DataInResponse: Decodable {
     let variants: [VarinatsResponse?]?
     
     func defaultMapping() -> DataIn {
-        return DataIn(url: url ?? "",
+        return DataIn(imageUrl: url ?? "",
                      text: text ?? "",
                      selectorId: selectorId ?? 99,
                      variants: variants?.compactMap({ $0?.defaultMapping() }) ?? [] )

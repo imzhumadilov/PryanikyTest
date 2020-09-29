@@ -12,19 +12,29 @@ class InformationPresenter: InformationPresenterInput, InformationViewOutput {
     weak var view: InformationViewInput?
     var router: InformationRouterInput?
     
-    // MARK: - Initialization
-    init() { }
+    private var type: ViewList?
+    private var data: DataIn?
+    private var variant: Varinats?
     
     // MARK: - InformationPresenterInput
     func configure(type: ViewList, data: DataIn) {
-        view?.setup(type: type, data: data)
+        self.type = type
+        self.data = data
     }
     
     func configure(type: ViewList, variant: Varinats) {
-        view?.setup(type: type, variant: variant)
+        self.type = type
+        self.variant = variant
     }
     
     // MARK: - InformationViewOutput
+    func getData() {
+        if let type = type, let data = data {
+            view?.setup(type: type, data: data)
+        } else if let type = type, let variant = variant {
+            view?.setup(type: type, variant: variant)
+        }
+    }
     
     // MARK: - Module functions
 }

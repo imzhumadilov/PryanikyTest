@@ -42,6 +42,7 @@
 		288806D4252351DC00276566 /* InformationPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D1252351DC00276566 /* InformationPresenterOutput.swift */; };
 		288806D8252351F300276566 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D6252351F300276566 /* InformationViewController.swift */; };
 		288806D9252351F300276566 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806D7252351F300276566 /* InformationViewController.xib */; };
+		28EC99632523811700DB35D1 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC99622523811700DB35D1 /* Routing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		288806D1252351DC00276566 /* InformationPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenterOutput.swift; sourceTree = "<group>"; };
 		288806D6252351F300276566 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		288806D7252351F300276566 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		28EC99622523811700DB35D1 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286E1C7A2523825000C8815A /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				286E1C7B2523825E00C8815A /* Extensions */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		286E1C7B2523825E00C8815A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				286E1C7C2523826800C8815A /* Foundation */,
+				286E1C7D2523827700C8815A /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		286E1C7C2523826800C8815A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				288806922523136C00276566 /* String+className.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		286E1C7D2523827700C8815A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				288806962523138C00276566 /* UIViewController+identifier.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		286E1C7E2523829F00C8815A /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				288806B8252351A100276566 /* Information */,
+				288806602523123800276566 /* ItemsList */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		286E1C7F252382C300C8815A /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				286E1C80252382C700C8815A /* Network */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		286E1C80252382C700C8815A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				288806992523159500276566 /* PryanikyService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2888063F2523120B00276566 = {
 			isa = PBXGroup;
 			children = (
@@ -114,18 +174,11 @@
 		2888064A2523120B00276566 /* PryanikyTest */ = {
 			isa = PBXGroup;
 			children = (
-				2888064B2523120B00276566 /* AppDelegate.swift */,
-				2888064D2523120B00276566 /* SceneDelegate.swift */,
-				288806922523136C00276566 /* String+className.swift */,
-				288806962523138C00276566 /* UIViewController+identifier.swift */,
-				288806992523159500276566 /* PryanikyService.swift */,
-				2888069E25231C5000276566 /* DataI.swift */,
-				288806B52523512A00276566 /* ViewList.swift */,
-				288806B8252351A100276566 /* Information */,
-				288806602523123800276566 /* ItemsList */,
-				288806542523120D00276566 /* Assets.xcassets */,
-				288806562523120D00276566 /* LaunchScreen.storyboard */,
-				288806592523120D00276566 /* Info.plist */,
+				28EC995E2523804B00DB35D1 /* Application Layer */,
+				28EC99602523809400DB35D1 /* Data Layer */,
+				286E1C7A2523825000C8815A /* Domain Layer */,
+				286E1C7E2523829F00C8815A /* Presentation Layer */,
+				286E1C7F252382C300C8815A /* Service Layer */,
 			);
 			path = PryanikyTest;
 			sourceTree = "<group>";
@@ -176,6 +229,52 @@
 				288806CA252351D800276566 /* InformationViewOutput.swift */,
 			);
 			path = Information;
+			sourceTree = "<group>";
+		};
+		28EC995E2523804B00DB35D1 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				288806592523120D00276566 /* Info.plist */,
+				2888064B2523120B00276566 /* AppDelegate.swift */,
+				2888064D2523120B00276566 /* SceneDelegate.swift */,
+				288806562523120D00276566 /* LaunchScreen.storyboard */,
+				28EC995F2523806F00DB35D1 /* Resources */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		28EC995F2523806F00DB35D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				288806542523120D00276566 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28EC99602523809400DB35D1 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				288806B52523512A00276566 /* ViewList.swift */,
+				28EC9961252380EF00DB35D1 /* Models */,
+				28EC99662523811C00DB35D1 /* Network */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		28EC9961252380EF00DB35D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2888069E25231C5000276566 /* DataI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28EC99662523811C00DB35D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				28EC99622523811700DB35D1 /* Routing.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EC99632523811700DB35D1 /* Routing.swift in Sources */,
 				288806CD252351D800276566 /* InformationViewOutput.swift in Sources */,
 				288806D3252351DC00276566 /* InformationPresenter.swift in Sources */,
 				288806772523128C00276566 /* ItemsListViewInput.swift in Sources */,
@@ -420,7 +520,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BCZLG5BLR;
-				INFOPLIST_FILE = PryanikyTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PryanikyTest/Application Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BCZLG5BLR;
-				INFOPLIST_FILE = PryanikyTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PryanikyTest/Application Layer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
