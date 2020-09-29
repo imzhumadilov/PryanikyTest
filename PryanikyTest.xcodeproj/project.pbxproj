@@ -24,7 +24,6 @@
 		288806932523136C00276566 /* String+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806922523136C00276566 /* String+className.swift */; };
 		288806972523138C00276566 /* UIViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806962523138C00276566 /* UIViewController+identifier.swift */; };
 		2888069A2523159500276566 /* PryanikyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806992523159500276566 /* PryanikyService.swift */; };
-		2888069F25231C5000276566 /* DataI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2888069E25231C5000276566 /* DataI.swift */; };
 		288806A6252344E000276566 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806A4252344E000276566 /* ItemTableViewCell.swift */; };
 		288806A7252344E000276566 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806A5252344E000276566 /* ItemTableViewCell.xib */; };
 		288806AB252347A300276566 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806A9252347A300276566 /* SelectorTableViewCell.swift */; };
@@ -32,8 +31,6 @@
 		288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */; };
 		288806B125234A7800276566 /* SelectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */; };
 		288806B62523512A00276566 /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806B52523512A00276566 /* ViewList.swift */; };
-		288806C4252351CF00276566 /* InformationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C2252351CF00276566 /* InformationRouter.swift */; };
-		288806C5252351CF00276566 /* InformationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C3252351CF00276566 /* InformationRouterInput.swift */; };
 		288806C8252351D300276566 /* InformationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C7252351D300276566 /* InformationConfigurator.swift */; };
 		288806CC252351D800276566 /* InformationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CB252351D800276566 /* InformationViewInput.swift */; };
 		288806CD252351D800276566 /* InformationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CA252351D800276566 /* InformationViewOutput.swift */; };
@@ -42,6 +39,14 @@
 		288806D4252351DC00276566 /* InformationPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D1252351DC00276566 /* InformationPresenterOutput.swift */; };
 		288806D8252351F300276566 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806D6252351F300276566 /* InformationViewController.swift */; };
 		288806D9252351F300276566 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806D7252351F300276566 /* InformationViewController.xib */; };
+		28B824D52523A598008419FB /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824D42523A598008419FB /* Items.swift */; };
+		28B824D92523A5A7008419FB /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824D82523A5A7008419FB /* ItemsResponse.swift */; };
+		28B824DF2523A5F2008419FB /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824DE2523A5F2008419FB /* DataType.swift */; };
+		28B824E32523A600008419FB /* DataTypeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824E22523A600008419FB /* DataTypeResponse.swift */; };
+		28B824E92523A65F008419FB /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824E82523A65F008419FB /* Content.swift */; };
+		28B824ED2523A66B008419FB /* ContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824EC2523A66B008419FB /* ContentResponse.swift */; };
+		28B824F32523A6AF008419FB /* SelectorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824F22523A6AF008419FB /* SelectorContent.swift */; };
+		28B824F72523A6BB008419FB /* SelectorContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B824F62523A6BB008419FB /* SelectorContentResponse.swift */; };
 		28EC99632523811700DB35D1 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC99622523811700DB35D1 /* Routing.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +70,6 @@
 		288806922523136C00276566 /* String+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+className.swift"; sourceTree = "<group>"; };
 		288806962523138C00276566 /* UIViewController+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+identifier.swift"; sourceTree = "<group>"; };
 		288806992523159500276566 /* PryanikyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikyService.swift; sourceTree = "<group>"; };
-		2888069E25231C5000276566 /* DataI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataI.swift; sourceTree = "<group>"; };
 		288806A4252344E000276566 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		288806A5252344E000276566 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		288806A9252347A300276566 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,8 +77,6 @@
 		288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewCell.swift; sourceTree = "<group>"; };
 		288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorCollectionViewCell.xib; sourceTree = "<group>"; };
 		288806B52523512A00276566 /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
-		288806C2252351CF00276566 /* InformationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRouter.swift; sourceTree = "<group>"; };
-		288806C3252351CF00276566 /* InformationRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRouterInput.swift; sourceTree = "<group>"; };
 		288806C7252351D300276566 /* InformationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationConfigurator.swift; sourceTree = "<group>"; };
 		288806CA252351D800276566 /* InformationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewOutput.swift; sourceTree = "<group>"; };
 		288806CB252351D800276566 /* InformationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewInput.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 		288806D1252351DC00276566 /* InformationPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenterOutput.swift; sourceTree = "<group>"; };
 		288806D6252351F300276566 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		288806D7252351F300276566 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		28B824D42523A598008419FB /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		28B824D82523A5A7008419FB /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
+		28B824DE2523A5F2008419FB /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		28B824E22523A600008419FB /* DataTypeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeResponse.swift; sourceTree = "<group>"; };
+		28B824E82523A65F008419FB /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		28B824EC2523A66B008419FB /* ContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentResponse.swift; sourceTree = "<group>"; };
+		28B824F22523A6AF008419FB /* SelectorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorContent.swift; sourceTree = "<group>"; };
+		28B824F62523A6BB008419FB /* SelectorContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorContentResponse.swift; sourceTree = "<group>"; };
 		28EC99622523811700DB35D1 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,17 +196,10 @@
 		288806602523123800276566 /* ItemsList */ = {
 			isa = PBXGroup;
 			children = (
-				2888067E2523129700276566 /* ItemsListConfigurator.swift */,
-				2888066A2523128600276566 /* ItemsListPresenter.swift */,
-				2888066B2523128600276566 /* ItemsListPresenterInput.swift */,
-				2888066C2523128600276566 /* ItemsListPresenterOutput.swift */,
-				288806792523129200276566 /* ItemsListRouter.swift */,
-				2888067A2523129200276566 /* ItemsListRouterInput.swift */,
-				28880681252312D000276566 /* ItemsListViewController.swift */,
-				28880682252312D000276566 /* ItemsListViewController.xib */,
-				288806722523128B00276566 /* ItemsListViewInput.swift */,
-				288806712523128B00276566 /* ItemsListViewOutput.swift */,
-				288806A1252344AB00276566 /* Cell */,
+				28B825012523A7E0008419FB /* Configurator */,
+				28B825002523A7CD008419FB /* Presenter */,
+				28B825022523A7EE008419FB /* Router */,
+				28B824FF2523A7BC008419FB /* View */,
 			);
 			path = ItemsList;
 			sourceTree = "<group>";
@@ -217,18 +220,147 @@
 		288806B8252351A100276566 /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				28B824FC2523A734008419FB /* Configurator */,
+				28B824FD2523A788008419FB /* Presenter */,
+				28B824FE2523A799008419FB /* View */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		28B824D32523A58A008419FB /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				28B824D42523A598008419FB /* Items.swift */,
+				28B824DB2523A5AD008419FB /* ItemsResponse */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		28B824DB2523A5AD008419FB /* ItemsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				28B824D82523A5A7008419FB /* ItemsResponse.swift */,
+			);
+			path = ItemsResponse;
+			sourceTree = "<group>";
+		};
+		28B824DC2523A5DD008419FB /* DataType */ = {
+			isa = PBXGroup;
+			children = (
+				28B824DE2523A5F2008419FB /* DataType.swift */,
+				28B824DD2523A5E6008419FB /* DataTypeResponse */,
+			);
+			path = DataType;
+			sourceTree = "<group>";
+		};
+		28B824DD2523A5E6008419FB /* DataTypeResponse */ = {
+			isa = PBXGroup;
+			children = (
+				28B824E22523A600008419FB /* DataTypeResponse.swift */,
+			);
+			path = DataTypeResponse;
+			sourceTree = "<group>";
+		};
+		28B824E62523A636008419FB /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				28B824E82523A65F008419FB /* Content.swift */,
+				28B824E72523A651008419FB /* ContentResponse */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		28B824E72523A651008419FB /* ContentResponse */ = {
+			isa = PBXGroup;
+			children = (
+				28B824EC2523A66B008419FB /* ContentResponse.swift */,
+			);
+			path = ContentResponse;
+			sourceTree = "<group>";
+		};
+		28B824F02523A699008419FB /* SelectorContent */ = {
+			isa = PBXGroup;
+			children = (
+				28B824F22523A6AF008419FB /* SelectorContent.swift */,
+				28B824F12523A6A4008419FB /* SelectorContentResponse */,
+			);
+			path = SelectorContent;
+			sourceTree = "<group>";
+		};
+		28B824F12523A6A4008419FB /* SelectorContentResponse */ = {
+			isa = PBXGroup;
+			children = (
+				28B824F62523A6BB008419FB /* SelectorContentResponse.swift */,
+			);
+			path = SelectorContentResponse;
+			sourceTree = "<group>";
+		};
+		28B824FC2523A734008419FB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
 				288806C7252351D300276566 /* InformationConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		28B824FD2523A788008419FB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
 				288806CF252351DC00276566 /* InformationPresenter.swift */,
 				288806D0252351DC00276566 /* InformationPresenterInput.swift */,
 				288806D1252351DC00276566 /* InformationPresenterOutput.swift */,
-				288806C2252351CF00276566 /* InformationRouter.swift */,
-				288806C3252351CF00276566 /* InformationRouterInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		28B824FE2523A799008419FB /* View */ = {
+			isa = PBXGroup;
+			children = (
 				288806D6252351F300276566 /* InformationViewController.swift */,
-				288806D7252351F300276566 /* InformationViewController.xib */,
 				288806CB252351D800276566 /* InformationViewInput.swift */,
 				288806CA252351D800276566 /* InformationViewOutput.swift */,
+				288806D7252351F300276566 /* InformationViewController.xib */,
 			);
-			path = Information;
+			path = View;
+			sourceTree = "<group>";
+		};
+		28B824FF2523A7BC008419FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28880681252312D000276566 /* ItemsListViewController.swift */,
+				288806722523128B00276566 /* ItemsListViewInput.swift */,
+				288806712523128B00276566 /* ItemsListViewOutput.swift */,
+				28880682252312D000276566 /* ItemsListViewController.xib */,
+				288806A1252344AB00276566 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28B825002523A7CD008419FB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2888066A2523128600276566 /* ItemsListPresenter.swift */,
+				2888066B2523128600276566 /* ItemsListPresenterInput.swift */,
+				2888066C2523128600276566 /* ItemsListPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		28B825012523A7E0008419FB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				2888067E2523129700276566 /* ItemsListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		28B825022523A7EE008419FB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				288806792523129200276566 /* ItemsListRouter.swift */,
+				2888067A2523129200276566 /* ItemsListRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		28EC995E2523804B00DB35D1 /* Application Layer */ = {
@@ -264,7 +396,10 @@
 		28EC9961252380EF00DB35D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2888069E25231C5000276566 /* DataI.swift */,
+				28B824E62523A636008419FB /* Content */,
+				28B824DC2523A5DD008419FB /* DataType */,
+				28B824D32523A58A008419FB /* Items */,
+				28B824F02523A699008419FB /* SelectorContent */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,10 +487,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28EC99632523811700DB35D1 /* Routing.swift in Sources */,
+				28B824DF2523A5F2008419FB /* DataType.swift in Sources */,
 				288806CD252351D800276566 /* InformationViewOutput.swift in Sources */,
+				28B824E92523A65F008419FB /* Content.swift in Sources */,
+				28B824F72523A6BB008419FB /* SelectorContentResponse.swift in Sources */,
+				28B824D92523A5A7008419FB /* ItemsResponse.swift in Sources */,
 				288806D3252351DC00276566 /* InformationPresenter.swift in Sources */,
 				288806772523128C00276566 /* ItemsListViewInput.swift in Sources */,
-				288806C4252351CF00276566 /* InformationRouter.swift in Sources */,
+				28B824E32523A600008419FB /* DataTypeResponse.swift in Sources */,
+				28B824D52523A598008419FB /* Items.swift in Sources */,
 				2888066D2523128600276566 /* ItemsListPresenterOutput.swift in Sources */,
 				288806C8252351D300276566 /* InformationConfigurator.swift in Sources */,
 				288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */,
@@ -367,17 +507,17 @@
 				28880683252312D000276566 /* ItemsListViewController.swift in Sources */,
 				2888064C2523120B00276566 /* AppDelegate.swift in Sources */,
 				288806932523136C00276566 /* String+className.swift in Sources */,
-				2888069F25231C5000276566 /* DataI.swift in Sources */,
+				28B824ED2523A66B008419FB /* ContentResponse.swift in Sources */,
 				288806752523128C00276566 /* ItemsListViewOutput.swift in Sources */,
 				288806972523138C00276566 /* UIViewController+identifier.swift in Sources */,
 				288806B62523512A00276566 /* ViewList.swift in Sources */,
 				2888067B2523129300276566 /* ItemsListRouterInput.swift in Sources */,
+				28B824F32523A6AF008419FB /* SelectorContent.swift in Sources */,
 				2888064E2523120B00276566 /* SceneDelegate.swift in Sources */,
 				288806D4252351DC00276566 /* InformationPresenterOutput.swift in Sources */,
 				288806D2252351DC00276566 /* InformationPresenterInput.swift in Sources */,
 				288806D8252351F300276566 /* InformationViewController.swift in Sources */,
 				288806CC252351D800276566 /* InformationViewInput.swift in Sources */,
-				288806C5252351CF00276566 /* InformationRouterInput.swift in Sources */,
 				2888066E2523128600276566 /* ItemsListPresenter.swift in Sources */,
 				2888067F2523129700276566 /* ItemsListConfigurator.swift in Sources */,
 			);

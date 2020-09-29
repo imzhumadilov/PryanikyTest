@@ -14,18 +14,18 @@ class ItemsListRouter: ItemsListRouterInput {
     weak var view: ItemsListViewController?
     
     // MARK: - ItemsListRouterInput
-    func pushInformationViewController(type: ViewList, data: DataIn) {
+    func pushInformationViewController(type: ViewList, content: Content) {
         let viewController = InformationConfigurator.create()
         let informationPresenterInput = InformationConfigurator.configure(with: viewController)
-        informationPresenterInput.configure(type: type, data: data)
+        informationPresenterInput.configure(type: type, content: content)
         
         view?.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func pushInformationViewController(type: ViewList, variant: Varinats) {
+    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent) {
         let viewController = InformationConfigurator.create()
         let informationPresenterInput = InformationConfigurator.configure(with: viewController)
-        informationPresenterInput.configure(type: type, variant: variant)
+        informationPresenterInput.configure(type: type, selectorContent: selectorContent)
         
         view?.navigationController?.pushViewController(viewController, animated: true)
     }

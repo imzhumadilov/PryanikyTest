@@ -8,7 +8,7 @@
 import UIKit
 
 class InformationViewController: UIViewController, InformationViewInput {
-
+    
     // MARK: - Outlets
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var textLabel: UILabel!
@@ -26,23 +26,23 @@ class InformationViewController: UIViewController, InformationViewInput {
     }
     
     // MARK: - InformationViewInput
-    public func setup(type: ViewList, data: DataIn) {
+    func setup(type: ViewList, content: Content) {
         setupView(type: type)
         
         nameLabel.text = "name: " + type.rawValue
-        textLabel.text = "text: " + data.text
+        textLabel.text = "text: " + content.text
         
         if type == .picture {
-            setupImage(url: data.imageUrl)
+            setupImage(url: content.imageUrl)
         }
     }
     
-    public func setup(type: ViewList, variant: Varinats) {
+    func setup(type: ViewList, selectorContent: SelectorContent) {
         setupView(type: type)
         
         nameLabel.text = "name: " + type.rawValue
-        textLabel.text = "text: " + variant.text
-        idLabel.text = "id: " + String(variant.id)
+        textLabel.text = "text: " + selectorContent.text
+        idLabel.text = "id: " + String(selectorContent.id)
     }
 }
 
@@ -59,7 +59,7 @@ extension InformationViewController {
             
         case .picture:
             idLabel.isHidden = true
-        
+            
         case .selector:
             selectorImageView.isHidden = true
             

@@ -7,5 +7,6 @@
 //
 
 protocol InformationViewOutput {
+    
     func getData()
 }

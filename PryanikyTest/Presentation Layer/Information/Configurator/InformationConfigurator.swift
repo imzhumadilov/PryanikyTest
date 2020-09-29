@@ -17,12 +17,7 @@ enum InformationConfigurator {
     static func configure(with reference: InformationViewController) -> InformationPresenterInput {
         let presenter = InformationPresenter()
         
-        let router = InformationRouter()
-        router.view = reference
-        
         presenter.view = reference
-        presenter.router = router
-        
         reference.output = presenter
         
         return presenter

@@ -37,7 +37,7 @@ class ItemsListViewController: UIViewController, ItemsListViewInput {
 // MARK: - Setup functions
 extension ItemsListViewController {
     
-    func setupComponents() {
+    private func setupComponents() {
         navigationItem.title = "Items"
         
         tableView.delegate = self
@@ -85,7 +85,7 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
                   let data = items.data.filter({ $0.name == ViewList.selector.rawValue }).first else { return UITableViewCell() }
             
             cell.delegate = self
-            cell.setup(name: ViewList.selector.rawValue, variants: data.data.variants)
+            cell.setup(name: ViewList.selector.rawValue, content: data.data.variants)
             
             return cell
         }
@@ -104,16 +104,16 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let viewTitle = items?.view[indexPath.row],
               viewTitle != ViewList.selector.rawValue,
-              let data = items?.data.filter({ $0.name == viewTitle }).first?.data else { return }
+              let content = items?.data.filter({ $0.name == viewTitle }).first?.data else { return }
         
-        output?.pushInformationViewController(type: ViewList(rawValue: viewTitle) ?? .none, data: data)
+        output?.pushInformationViewController(type: ViewList(rawValue: viewTitle) ?? .none, content: content)
     }
 }
 
 // MARK: - SelectorTableViewCellDelegate
 extension ItemsListViewController: SelectorTableViewCellDelegate {
     
-    func pushInformationViewController(type: ViewList, variant: Varinats) {
-        output?.pushInformationViewController(type: type, variant: variant)
+    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent) {
+        output?.pushInformationViewController(type: type, selectorContent: selectorContent)
     }
 }

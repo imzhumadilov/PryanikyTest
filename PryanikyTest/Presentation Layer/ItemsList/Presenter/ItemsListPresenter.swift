@@ -15,7 +15,7 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
     let pryanikyService = PryanikyService()
     
     // MARK: - ItemsListViewOutput
-    public func fetchData() {
+    func fetchData() {
         
         pryanikyService.getData(url: Routing.Data.dataJSON) { result in
             
@@ -30,13 +30,12 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
         }
     }
     
-    public func pushInformationViewController(type: ViewList, data: DataIn) {
-        router?.pushInformationViewController(type: type, data: data)
+    func pushInformationViewController(type: ViewList, content: Content) {
+        router?.pushInformationViewController(type: type, content: content)
     }
     
-    
-    public func pushInformationViewController(type: ViewList, variant: Varinats) {
-        router?.pushInformationViewController(type: type, variant: variant)
+    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent) {
+        router?.pushInformationViewController(type: type, selectorContent: selectorContent)
     }
 }
 

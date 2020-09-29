@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SelectorTableViewCellDelegate: class {
-    func pushInformationViewController(type: ViewList, variant: Varinats)
+    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent)
 }
 
 class SelectorTableViewCell: UITableViewCell {
@@ -20,7 +20,7 @@ class SelectorTableViewCell: UITableViewCell {
     // MARK: - Props
     static let id = String(describing: SelectorTableViewCell.self)
     weak var delegate: SelectorTableViewCellDelegate?
-    private var variants: [Varinats] = []
+    private var selectorContent: [SelectorContent] = []
     
     // MARK: - Lifecycle
     override func prepareForReuse() {
@@ -30,10 +30,10 @@ class SelectorTableViewCell: UITableViewCell {
     }
     
     // MARK: - Setup functions
-    public func setup(name: String, variants: [Varinats]) {
+    public func setup(name: String, content: [SelectorContent]) {
         setupComponents()
         
-        self.variants = variants
+        self.selectorContent = content
         
         titleLabel.text = name
         collectionView.reloadData()
@@ -53,7 +53,8 @@ class SelectorTableViewCell: UITableViewCell {
 extension SelectorTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        variants.count
+        
+        return selectorContent.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,12 +63,14 @@ extension SelectorTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
                 .dequeueReusableCell(withReuseIdentifier: SelectorCollectionViewCell.id,
                                      for: indexPath) as? SelectorCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.setup(title: variants[indexPath.row].text)
+        let id = selectorContent[indexPath.row].id
+        cell.setup(title: String(id))
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        delegate?.pushInformationViewController(type: .selector, variant: variants[indexPath.row])
+        delegate?.pushInformationViewController(type: .selector, selectorContent: selectorContent[indexPath.row])
     }
 }
