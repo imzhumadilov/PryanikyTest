@@ -77,15 +77,15 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
         
         guard let items = items else { return UITableViewCell() }
         
-        if items.view[indexPath.row] == ViewList.selector.rawValue {
+        if items.view[indexPath.row] == ViewType.selector.rawValue {
             
             guard let cell = tableView
                     .dequeueReusableCell(withIdentifier: SelectorTableViewCell.id,
                                          for: indexPath) as? SelectorTableViewCell,
-                  let data = items.data.filter({ $0.name == ViewList.selector.rawValue }).first else { return UITableViewCell() }
+                  let data = items.data.filter({ $0.name == ViewType.selector.rawValue }).first else { return UITableViewCell() }
             
             cell.delegate = self
-            cell.setup(name: ViewList.selector.rawValue, content: data.data.variants)
+            cell.setup(name: ViewType.selector.rawValue, content: data.data.variants)
             
             return cell
         }
@@ -103,17 +103,17 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let viewTitle = items?.view[indexPath.row],
-              viewTitle != ViewList.selector.rawValue,
+              viewTitle != ViewType.selector.rawValue,
               let content = items?.data.filter({ $0.name == viewTitle }).first?.data else { return }
         
-        output?.pushInformationViewController(type: ViewList(rawValue: viewTitle) ?? .none, content: content)
+        output?.pushInformationViewController(type: ViewType(rawValue: viewTitle) ?? .none, content: content)
     }
 }
 
 // MARK: - SelectorTableViewCellDelegate
 extension ItemsListViewController: SelectorTableViewCellDelegate {
     
-    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent) {
+    func pushInformationViewController(type: ViewType, selectorContent: SelectorContent) {
         output?.pushInformationViewController(type: type, selectorContent: selectorContent)
     }
 }

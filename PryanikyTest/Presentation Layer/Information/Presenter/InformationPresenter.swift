@@ -11,17 +11,17 @@ class InformationPresenter: InformationPresenterInput, InformationViewOutput {
     // MARK: - Props
     weak var view: InformationViewInput?
     
-    private var type: ViewList?
+    private var type: ViewType?
     private var content: Content?
     private var selectorContent: SelectorContent?
     
     // MARK: - InformationPresenterInput
-    func configure(type: ViewList, content: Content) {
+    func configure(type: ViewType, content: Content) {
         self.type = type
         self.content = content
     }
     
-    func configure(type: ViewList, selectorContent: SelectorContent) {
+    func configure(type: ViewType, selectorContent: SelectorContent) {
         self.type = type
         self.selectorContent = selectorContent
     }

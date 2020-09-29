@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SelectorTableViewCellDelegate: class {
-    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent)
+    func pushInformationViewController(type: ViewType, selectorContent: SelectorContent)
 }
 
 class SelectorTableViewCell: UITableViewCell {

@@ -30,11 +30,11 @@ class ItemsListPresenter: ItemsListPresenterInput, ItemsListViewOutput {
         }
     }
     
-    func pushInformationViewController(type: ViewList, content: Content) {
+    func pushInformationViewController(type: ViewType, content: Content) {
         router?.pushInformationViewController(type: type, content: content)
     }
     
-    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent) {
+    func pushInformationViewController(type: ViewType, selectorContent: SelectorContent) {
         router?.pushInformationViewController(type: type, selectorContent: selectorContent)
     }
 }

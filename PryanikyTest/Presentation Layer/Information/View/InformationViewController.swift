@@ -26,7 +26,7 @@ class InformationViewController: UIViewController, InformationViewInput {
     }
     
     // MARK: - InformationViewInput
-    func setup(type: ViewList, content: Content) {
+    func setup(type: ViewType, content: Content) {
         setupView(type: type)
         
         nameLabel.text = "name: " + type.rawValue
@@ -37,7 +37,7 @@ class InformationViewController: UIViewController, InformationViewInput {
         }
     }
     
-    func setup(type: ViewList, selectorContent: SelectorContent) {
+    func setup(type: ViewType, selectorContent: SelectorContent) {
         setupView(type: type)
         
         nameLabel.text = "name: " + type.rawValue
@@ -49,7 +49,7 @@ class InformationViewController: UIViewController, InformationViewInput {
 // MARK: - Setup functions
 extension InformationViewController {
     
-    private func setupView(type: ViewList) {
+    private func setupView(type: ViewType) {
         
         switch type {
         

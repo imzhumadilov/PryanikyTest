@@ -9,6 +9,6 @@
 protocol ItemsListViewOutput {
     
     func fetchData()
-    func pushInformationViewController(type: ViewList, content: Content)
-    func pushInformationViewController(type: ViewList, selectorContent: SelectorContent)
+    func pushInformationViewController(type: ViewType, content: Content)
+    func pushInformationViewController(type: ViewType, selectorContent: SelectorContent)
 }

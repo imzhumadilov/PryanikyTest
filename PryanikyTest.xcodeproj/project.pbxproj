@@ -30,7 +30,7 @@
 		288806AC252347A300276566 /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AA252347A300276566 /* SelectorTableViewCell.xib */; };
 		288806B025234A7800276566 /* SelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */; };
 		288806B125234A7800276566 /* SelectorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */; };
-		288806B62523512A00276566 /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806B52523512A00276566 /* ViewList.swift */; };
+		288806B62523512A00276566 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806B52523512A00276566 /* ViewType.swift */; };
 		288806C8252351D300276566 /* InformationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806C7252351D300276566 /* InformationConfigurator.swift */; };
 		288806CC252351D800276566 /* InformationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CB252351D800276566 /* InformationViewInput.swift */; };
 		288806CD252351D800276566 /* InformationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288806CA252351D800276566 /* InformationViewOutput.swift */; };
@@ -76,7 +76,7 @@
 		288806AA252347A300276566 /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
 		288806AE25234A7800276566 /* SelectorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewCell.swift; sourceTree = "<group>"; };
 		288806AF25234A7800276566 /* SelectorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorCollectionViewCell.xib; sourceTree = "<group>"; };
-		288806B52523512A00276566 /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
+		288806B52523512A00276566 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		288806C7252351D300276566 /* InformationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationConfigurator.swift; sourceTree = "<group>"; };
 		288806CA252351D800276566 /* InformationViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewOutput.swift; sourceTree = "<group>"; };
 		288806CB252351D800276566 /* InformationViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewInput.swift; sourceTree = "<group>"; };
@@ -386,7 +386,7 @@
 		28EC99602523809400DB35D1 /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
-				288806B52523512A00276566 /* ViewList.swift */,
+				288806B52523512A00276566 /* ViewType.swift */,
 				28EC9961252380EF00DB35D1 /* Models */,
 				28EC99662523811C00DB35D1 /* Network */,
 			);
@@ -510,7 +510,7 @@
 				28B824ED2523A66B008419FB /* ContentResponse.swift in Sources */,
 				288806752523128C00276566 /* ItemsListViewOutput.swift in Sources */,
 				288806972523138C00276566 /* UIViewController+identifier.swift in Sources */,
-				288806B62523512A00276566 /* ViewList.swift in Sources */,
+				288806B62523512A00276566 /* ViewType.swift in Sources */,
 				2888067B2523129300276566 /* ItemsListRouterInput.swift in Sources */,
 				28B824F32523A6AF008419FB /* SelectorContent.swift in Sources */,
 				2888064E2523120B00276566 /* SceneDelegate.swift in Sources */,

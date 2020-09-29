@@ -8,6 +8,6 @@
 
 protocol InformationPresenterInput: class {
     
-    func configure(type: ViewList, content: Content)
-    func configure(type: ViewList, selectorContent: SelectorContent)
+    func configure(type: ViewType, content: Content)
+    func configure(type: ViewType, selectorContent: SelectorContent)
 }

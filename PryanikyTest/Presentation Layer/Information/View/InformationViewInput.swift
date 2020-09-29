@@ -8,6 +8,6 @@
 
 protocol InformationViewInput: class {
     
-    func setup(type: ViewList, content: Content)
-    func setup(type: ViewList, selectorContent: SelectorContent)
+    func setup(type: ViewType, content: Content)
+    func setup(type: ViewType, selectorContent: SelectorContent)
 }
