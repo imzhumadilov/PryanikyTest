@@ -82,10 +82,10 @@ extension ItemsListViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView
                     .dequeueReusableCell(withIdentifier: SelectorTableViewCell.id,
                                          for: indexPath) as? SelectorTableViewCell,
-                  let data = items.data.filter({ $0.name == ViewType.selector.rawValue }).first else { return UITableViewCell() }
+                  let content = items.data.filter({ $0.name == ViewType.selector.rawValue }).first else { return UITableViewCell() }
             
             cell.delegate = self
-            cell.setup(name: ViewType.selector.rawValue, content: data.data.variants)
+            cell.setup(content: content.data.variants)
             
             return cell
         }

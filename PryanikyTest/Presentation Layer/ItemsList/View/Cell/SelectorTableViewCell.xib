@@ -9,41 +9,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="SelectorTableViewCell" customModule="PryanikyTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="SelectorTableViewCell" customModule="PryanikyTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qjL-8A-EPS">
-                        <rect key="frame" x="16" y="38" width="288" height="80"/>
+                        <rect key="frame" x="16" y="8" width="288" height="80"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="tFE-Hs-tE4"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rNB-ig-GaD">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="140" height="80"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-pY-7m4">
-                        <rect key="frame" x="16" y="8" width="288" height="24"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="24" id="DiM-CM-UsB"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="P2b-pY-7m4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="KeB-hh-tPb"/>
-                    <constraint firstItem="P2b-pY-7m4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PN1-TJ-S53"/>
-                    <constraint firstItem="qjL-8A-EPS" firstAttribute="top" secondItem="P2b-pY-7m4" secondAttribute="bottom" constant="6" id="QIK-p3-7KO"/>
-                    <constraint firstAttribute="trailing" secondItem="P2b-pY-7m4" secondAttribute="trailing" constant="16" id="W8e-01-0hB"/>
+                    <constraint firstItem="qjL-8A-EPS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1on-Ga-vSU"/>
                     <constraint firstAttribute="trailing" secondItem="qjL-8A-EPS" secondAttribute="trailing" constant="16" id="aew-8S-7Ay"/>
                     <constraint firstAttribute="bottom" secondItem="qjL-8A-EPS" secondAttribute="bottom" constant="8" id="dRj-W2-iri"/>
                     <constraint firstItem="qjL-8A-EPS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ioc-3Z-lnr"/>
@@ -52,9 +40,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="qjL-8A-EPS" id="Ar3-gY-0Sb"/>
-                <outlet property="titleLabel" destination="P2b-pY-7m4" id="e8j-SA-IWK"/>
             </connections>
-            <point key="canvasLocation" x="124.6376811594203" y="89.732142857142847"/>
+            <point key="canvasLocation" x="124.6376811594203" y="80.022321428571431"/>
         </tableViewCell>
     </objects>
 </document>

@@ -14,7 +14,6 @@ protocol SelectorTableViewCellDelegate: class {
 class SelectorTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: - Props
@@ -22,20 +21,12 @@ class SelectorTableViewCell: UITableViewCell {
     weak var delegate: SelectorTableViewCellDelegate?
     private var selectorContent: [SelectorContent] = []
     
-    // MARK: - Lifecycle
-    override func prepareForReuse() {
-        super.prepareForReuse()
-
-        titleLabel.text = ""
-    }
-    
     // MARK: - Setup functions
-    public func setup(name: String, content: [SelectorContent]) {
+    public func setup(content: [SelectorContent]) {
         setupComponents()
         
         self.selectorContent = content
         
-        titleLabel.text = name
         collectionView.reloadData()
     }
     
@@ -64,7 +55,7 @@ extension SelectorTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
                                      for: indexPath) as? SelectorCollectionViewCell else { return UICollectionViewCell() }
         
         let id = selectorContent[indexPath.row].id
-        cell.setup(title: String(id))
+        cell.setup(id: String(id))
         
         return cell
     }

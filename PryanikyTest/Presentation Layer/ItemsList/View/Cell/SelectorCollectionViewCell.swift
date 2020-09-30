@@ -23,7 +23,7 @@ class SelectorCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Setup functions
-    public func setup(title: String) {
-        titleLabel.text = title
+    public func setup(id: String) {
+        titleLabel.text = "selector " + id
     }
 }
